@@ -1,0 +1,8 @@
+{
+  "name": "LFI Indre",
+  "description": "Site militant de La France Insoumise Indre (36) inspiré par LFI Tarn et Châteauroux Populaire 2027.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

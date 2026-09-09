@@ -5,6 +5,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           
           <div>
+            <div className="mb-8">
+              <a href="https://lafranceinsoumise.fr/" target="_blank" rel="noopener noreferrer" className="inline-block transition-transform hover:scale-105">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/LFI_Logo_2024.svg" 
+                  alt="La France Insoumise" 
+                  className="h-16 w-auto object-contain"
+                />
+              </a>
+            </div>
             <div className="flex items-center gap-3 mb-6">
               <span className="font-black text-2xl uppercase tracking-tighter text-white">
                 LFI <span className="text-cyan-400">Indre</span>

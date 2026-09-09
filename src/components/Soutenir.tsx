@@ -5,9 +5,14 @@ export default function Soutenir() {
   return (
     <section id="soutenir" className="py-12 bg-red-600 overflow-hidden relative">
       {/* Background Phi symbols pattern */}
-      <div className="absolute inset-0 opacity-10 flex flex-wrap justify-around items-center gap-10 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 opacity-[0.07] flex flex-wrap justify-around items-center gap-10 overflow-hidden pointer-events-none">
         {Array.from({ length: 12 }).map((_, i) => (
-          <span key={i} className="font-serif italic font-bold text-6xl md:text-9xl text-white transform -rotate-12 select-none">φ</span>
+          <img 
+            key={i} 
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LFI_Logo_2024_%28cropped%29.svg" 
+            alt="" 
+            className="w-24 md:w-48 h-auto transform -rotate-12 select-none brightness-0 invert" 
+          />
         ))}
       </div>
 

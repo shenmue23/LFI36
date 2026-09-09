@@ -7,7 +7,9 @@ export default function Header() {
 
   const navLinks = [
     { name: 'Accueil', href: '#' },
+    { name: 'Démarches', href: '#demarches' },
     { name: 'Actions', href: '#events' },
+    { name: 'Porte-Voix', href: '#representants' },
     { name: 'Groupes d\'action', href: '#groups' },
     { name: 'Contact', href: '#contact' },
   ];

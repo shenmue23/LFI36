@@ -7,7 +7,7 @@ export default function Actualites() {
       name: "Facebook",
       icon: <Facebook size={32} />,
       linkNational: "https://www.facebook.com/lafranceinsoumise/",
-      linkLocal: "https://www.facebook.com/franceinsoumiseindre36/?locale=fr_FR",
+      linkLocal: "https://www.facebook.com/LaFranceInsoumiseIndre36/?locale=fr_FR",
       color: "bg-blue-600",
       description: "Suivez nos actions locales, nos reportages et nos directs."
     },
@@ -96,17 +96,19 @@ export default function Actualites() {
             href="https://linsoumission.fr/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col sm:flex-row items-center justify-between p-8 bg-slate-900 rounded-2xl shadow-xl hover:bg-slate-800 transition-colors group border-l-8 border-red-600"
+            className="flex flex-col items-center justify-center p-8 sm:p-12 bg-slate-50 rounded-2xl shadow-xl hover:bg-slate-100 transition-colors group border-t-8 border-red-600 text-center"
           >
-            <div className="text-left mb-6 sm:mb-0 sm:pr-8">
-              <h3 className="text-2xl font-black text-white uppercase tracking-wider mb-2">
-                L'insoumission
-              </h3>
-              <p className="text-slate-300 font-medium text-lg">
-                Le média en ligne de La France Insoumise. Retrouvez des articles, analyses, et décryptages exclusifs de l'actualité politique et sociale.
-              </p>
+            <div className="mb-8 w-full flex justify-center">
+              <img 
+                src="https://linsoumission.fr/wp-content/uploads/2020/02/insoumission_LogoLong.png" 
+                alt="L'insoumission" 
+                className="w-full max-w-xs sm:max-w-lg lg:max-w-2xl h-auto object-contain"
+              />
             </div>
-            <div className="shrink-0 flex items-center gap-2 bg-red-600 text-white font-bold uppercase tracking-widest text-sm px-6 py-4 rounded-lg group-hover:bg-red-500 transition-colors shadow-[0_8px_30px_rgb(220,38,38,0.3)]">
+            <p className="text-slate-700 font-medium text-lg sm:text-xl max-w-2xl mb-8">
+              Le média en ligne de La France Insoumise. Retrouvez des articles, analyses, et décryptages exclusifs de l'actualité politique et sociale.
+            </p>
+            <div className="shrink-0 flex items-center gap-2 bg-red-600 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg group-hover:bg-red-500 transition-colors shadow-[0_8px_30px_rgb(220,38,38,0.3)]">
               Lire le média <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </div>
           </a>

@@ -1,4 +1,4 @@
-import { Users, BookOpen, ShieldAlert, BookText, FileText, PlusCircle } from 'lucide-react';
+import { Users, BookOpen, ShieldAlert, BookText, FileText, PlusCircle, PlayCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function LocalGroups() {
@@ -29,8 +29,8 @@ export default function LocalGroups() {
           </div>
 
           <div className="relative z-10">
-            <div className="w-20 h-20 bg-cyan-900 text-cyan-400 rounded-full flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgb(8,145,178,0.3)]">
-              <span className="font-serif font-bold text-4xl">φ</span>
+            <div className="w-20 h-20 bg-slate-900 rounded-full flex items-center justify-center mx-auto mb-8 shadow-[0_0_30px_rgb(8,145,178,0.3)] border border-cyan-800">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LFI_Logo_2024_%28cropped%29.svg" alt="LFI" className="w-10 h-10 object-contain" />
             </div>
 
             <h3 className="font-black uppercase text-3xl mb-6 text-slate-100 tracking-tight">
@@ -89,7 +89,7 @@ export default function LocalGroups() {
                 <h4 className="text-xl font-black uppercase text-red-400 mb-4 tracking-wider">
                   Je souhaite animer ou créer un groupe
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mb-8">
                   <a 
                     href="https://actionpopulaire.fr/groupes/creer/"
                     target="_blank"
@@ -118,6 +118,28 @@ export default function LocalGroups() {
                   >
                     <FileText size={20} />
                     Fiches pratiques
+                  </a>
+                </div>
+
+                {/* Règles de création d'un flyer */}
+                <div className="bg-slate-800/80 p-6 rounded-lg border border-slate-700 text-left">
+                  <h5 className="font-bold text-lg text-slate-100 mb-4 flex items-center gap-2">
+                    <FileText size={20} className="text-cyan-400" /> 
+                    Règles de création d'un flyer
+                  </h5>
+                  <ul className="list-disc list-inside text-slate-300 space-y-2 mb-6 text-sm md:text-base">
+                    <li>Mention obligatoire : <strong>"Ne pas jeter sur la voie publique"</strong></li>
+                    <li>Indiquer l'imprimeur : <strong>"Imprimé par nos soins"</strong> ou le nom/adresse de l'imprimeur</li>
+                    <li><strong>Interdiction</strong> de croiser les couleurs Bleu / Blanc / Rouge (réservé à l'État)</li>
+                    <li><strong>Interdiction</strong> d'écrire en texte noir sur un fond blanc uni (réservé à l'administration)</li>
+                  </ul>
+                  <a 
+                    href="https://www.facebook.com/share/r/1FvLMZ3prY/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-cyan-400 hover:text-cyan-300 transition-colors uppercase tracking-wider"
+                  >
+                    <PlayCircle size={18} /> Voir la vidéo explicative
                   </a>
                 </div>
               </div>

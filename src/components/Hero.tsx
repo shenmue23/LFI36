@@ -19,12 +19,13 @@ export default function Hero() {
               L'Union Populaire <br />
               <span className="text-cyan-600 inline-block mt-3">dans l'Indre</span>
             </h1>
-            <p className="text-xl sm:text-2xl font-medium text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Rejoignez le mouvement de La France Insoumise. Agissons ensemble pour la rupture écologique et sociale dans notre département. <span className="font-serif italic font-bold text-cyan-600">φ</span>
+            <p className="text-xl sm:text-2xl font-medium text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed flex items-center justify-center flex-wrap gap-x-2">
+              <span>Rejoignez le mouvement de La France Insoumise. Agissons ensemble pour la rupture écologique et sociale dans notre département.</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/LFI_Logo_2024_%28cropped%29.svg" alt="LFI" className="inline-block h-6 w-auto -mt-1" />
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://actionpopulaire.fr/groupes/carte/"
+                href="https://actionpopulaire.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-600 text-white font-black text-xl uppercase px-8 py-4 tracking-tighter shadow-lg shadow-red-200 hover:bg-red-700 transition-colors flex items-center justify-center gap-3"
@@ -40,23 +41,7 @@ export default function Hero() {
                 Notre Programme
               </a>
             </div>
-            
-            <div className="flex flex-wrap justify-center gap-12 mt-16 max-w-2xl mx-auto">
-              <div className="border-l-4 border-cyan-500 pl-4 text-left">
-                <span className="block text-4xl font-black text-slate-900">4</span>
-                <span className="text-sm font-bold uppercase text-slate-400">Groupes Locaux</span>
-              </div>
-              <div className="border-l-4 border-cyan-500 pl-4 text-left">
-                <span className="block text-4xl font-black text-slate-900">250+</span>
-                <span className="text-sm font-bold uppercase text-slate-400">Insoumis·es</span>
-              </div>
-              <div className="border-l-4 border-cyan-500 pl-4 text-left">
-                <span className="block text-4xl font-black text-slate-900">3</span>
-                <span className="text-sm font-bold uppercase text-slate-400">Actions ce mois</span>
-              </div>
-            </div>
           </motion.div>
-
         </div>
       </div>
     </section>

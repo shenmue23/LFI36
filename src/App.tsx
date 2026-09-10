@@ -5,6 +5,7 @@ import Marquee from './components/Marquee';
 import Soutenir from './components/Soutenir';
 import Events from './components/Events';
 import Representants from './components/Representants';
+import Interpellation from './components/Interpellation';
 import Actualites from './components/Actualites';
 import LocalGroups from './components/LocalGroups';
 import Contact from './components/Contact';
@@ -22,6 +23,7 @@ export default function App() {
         <Soutenir />
         <Events />
         <Representants />
+        <Interpellation />
         <Actualites />
         <LocalGroups />
         <Contact />

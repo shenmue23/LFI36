@@ -11,6 +11,7 @@ export default function Header() {
     { name: 'Actions', href: '#events' },
     { name: 'Porte-Voix', href: '#representants' },
     { name: 'Groupes d\'action', href: '#groups' },
+    { name: 'Faites pression', href: '#interpellation' },
     { name: 'Contact', href: '#contact' },
   ];
 

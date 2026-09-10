@@ -39,7 +39,7 @@ const representants = [
     name: "Manon Aubry",
     role: "Eurodéputée",
     description: "Tête de liste LFI aux élections européennes et co-présidente du groupe de La Gauche au Parlement européen. Issue des luttes associatives (Oxfam), elle mène un combat acharné contre l'évasion fiscale, le pouvoir des lobbys, les traités de libre-échange et milite pour une bifurcation écologique radicale.",
-    image: "/manonaubry_1713188058-1170x749.jpg",
+    image: "https://graph.facebook.com/ManonAubryFr/picture?width=600&height=600",
     links: [
       { icon: <Twitter size={18} />, url: "https://twitter.com/ManonAubryFr", title: "Twitter" },
       { icon: <Instagram size={18} />, url: "https://www.instagram.com/manonaubryfr/", title: "Instagram" },
@@ -48,12 +48,12 @@ const representants = [
   },
   {
     name: "David Guiraud",
-    role: "Maire de Roubaix",
-    description: "Maire de Roubaix depuis mars 2026. Orateur redoutable, omniprésent dans l'espace médiatique et sur les réseaux sociaux. Il pourfend les inégalités et défend avec une ferveur sans concession la dignité des quartiers populaires et de la jeunesse.",
-    image: "/david-guiraud-2027-b8b12e-0@1x.jpeg",
+    role: "Député du Nord",
+    description: "Député du Nord et orateur redoutable, omniprésent dans l'espace médiatique et sur les réseaux sociaux. Il pourfend les inégalités et défend avec une ferveur sans concession la dignité des quartiers populaires et de la jeunesse.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d0/David_Guiraud_cropped_2024.jpg",
     links: [
+      { icon: <Facebook size={18} />, url: "https://www.facebook.com/david.guiraud.50/?locale=fr_FR", title: "Facebook" },
       { icon: <Twitter size={18} />, url: "https://twitter.com/GuiraudInd", title: "Twitter" },
-      { icon: <Instagram size={18} />, url: "https://www.instagram.com/guiraudind/", title: "Instagram" },
       { icon: <MessageCircle size={18} />, url: "https://www.tiktok.com/@david.guiraud", title: "TikTok" },
     ],
   },
@@ -70,7 +70,7 @@ const representants = [
   {
     name: "Antoine Léaument",
     role: "Député de l'Essonne",
-    description: "Député et fer de lance de la communication numérique du mouvement. Il déploie un travail titanesque sur internet (Twitch, YouTube) pour diffuser les idées humanistes et républicaines. Il est un infatigable défenseur de la souveraineté populaire, armé de sa pédagogie redoutable.",
+    description: "Député de l'Essonne et figure incontournable de La France Insoumise, Antoine Léaument conserve un attachement profond à ses racines dans l'Indre (36), département où il a grandi. Véritable fer de lance de la communication numérique du mouvement, il déploie un travail titanesque sur les réseaux sociaux (Twitch, YouTube) pour contourner le monopole des médias traditionnels et diffuser largement nos idées humanistes. Passionné par l'Histoire et la Révolution française, il s'impose comme un orateur redoutable dans l'hémicycle de l'Assemblée nationale, où il défend avec une ferveur inébranlable la souveraineté populaire, la République sociale et la justice climatique. Face à la montée de l'extrême droite et à la casse des services publics, sa pédagogie redoutable et sa constance militante en font une voix majeure de l'Union Populaire. Par ses interventions percutantes, il incarne l'espoir d'une rupture politique radicale et la promesse de l'Avenir en Commun.",
     image: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Antoine_L%C3%A9aument_le_21_juillet_2024_%28cropped%29.jpg",
     badge: "Natif de l'Indre (36)",
     links: [
@@ -97,10 +97,7 @@ const representants = [
     description: "Figure de proue des rassemblements unitaires et militante de conviction de la première heure. Elle a, à de très nombreuses reprises, bravé des scrutins majeurs en tant que candidate de la gauche réunie dans notre département, notamment lors des élections législatives où elle a tenu tête avec ténacité face aux vents dominants pour représenter l'Union Populaire et les espoirs d'une vraie justice sociale et environnementale. Ancrée profondément dans les réalités de l'Indre, Éloïse porte sans relâche la voix de ceux que l'on n'entend pas, tissant un lien indéfectible avec les travailleurs, les classes populaires, et les acteurs du monde associatif local. Sa force réside dans sa capacité à fédérer toutes les sensibilités de la gauche de rupture autour d'un programme ambitieux, combatif et radicalement tourné vers l'écologie populaire. Par ses campagnes marquantes et son opiniâtreté sur les marchés comme dans les urnes, elle continue d'incarner une opposition déterminée face à la casse sociale et la porte d'entrée incontournable vers l'Avenir en Commun pour des milliers d'électeurs indriens.",
     image: "https://graph.facebook.com/eloisegonzalezcirco1indreunionpopulaire/picture?width=600&height=600",
     badge: "Figure de l'Indre (36)",
-    links: [
-      { icon: <Facebook size={18} />, url: "#", title: "Facebook" },
-      { icon: <Twitter size={18} />, url: "#", title: "Twitter" },
-    ],
+    links: [],
   },
 ];
 
@@ -117,7 +114,7 @@ export default function Representants() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {representants.map((rep, index) => (
             <motion.div
               key={rep.name}
